@@ -1,0 +1,59 @@
+/* Glassmorphism effect for the input container */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'kustom', sans-serif;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Adjusting the file input */
+input[type="file"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'kustom', sans-serif;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Description text for file input */
+small.file-info {
+    margin-top: 5px;
+    color: #D3D3D3;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Additional styling for the upload label */
+label {
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-family: 'kustom', sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Hover effect for the file input */
+input[type="file"]:hover {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Styling for input-container when file is selected */
+.input-container.selected {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
